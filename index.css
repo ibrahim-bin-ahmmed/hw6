@@ -1,0 +1,117 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #2d2d2d;
+    color: #fff;
+}
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1 {
+    font-size: 2.5rem;
+  font-weight: 300;
+  color: #666666;
+}
+.new-task-form {
+    display: flex;
+}
+button, input {
+    border: none;
+    outline: none;
+    background: none;
+}
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: #1d1d1d;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    width: 300px;
+    font-size: 1rem;
+}
+#new-task-input::placeholder {
+    color: #f1f1f17b;
+}
+#new-task-submit {
+    color: #ee4b6c;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #cd4f62 ,#9a549a );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+
+}
+#new-task-submit:hover {
+    opacity: 0.8;
+}
+#new-task-submit:active {
+    opacity: 0.6;
+}
+main {
+    flex: 1 1 0%;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.task-list {
+    padding: 1rem;
+}
+.task-list h2 {
+    font-size: 1.5rem;
+    color: #666666;
+    margin-bottom: 0.5rem;
+}
+#tasks .task {
+    display: flex;  
+    justify-content: space-between;
+    background-color: #1d1d1d;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    border-radius: 1rem;
+}
+#tasks .task .content .text {
+    color: #e4dddd;
+    width: 100%;
+    transition:0.4s;
+    font-size: 1.12rem;
+    display: block;
+}
+#tasks .task .content .text:not(:read-only) {
+    color: #cd4f62;
+}
+#tasks .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.task .actions button{
+    margin: 0rem 1rem;
+    font-size: 1.12rem;
+    text-transform: uppercase;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.task .actions button:hover {
+    opacity: 0.8;
+}
+.task .actions button:active {
+    opacity: 0.6;
+}
+.task .actions .edit {
+    background-image: linear-gradient(to right, #cd4f62 ,#9a549a );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.task .actions .delete {
+    color: #e55a41e0;
+}
